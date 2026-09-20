@@ -1,0 +1,17 @@
+<header class="header">
+  <div class="logo">
+    <h1>{{ titulo }}</h1>
+  </div>
+  <nav class="nav">
+    <div class="user-info">
+      @if (usuarioLogado) {
+        <p>Bem-vindo de volta, {{ nomeUsuario }}!</p>
+      } @else {
+        <p>Olá, {{ nomeUsuario }}! Faça login para jogar.</p>
+      }
+    </div>
+    <button (click)="alterarLogin()" class="login-btn">
+      {{ usuarioLogado ? 'Sair' : 'Entrar' }}
+    </button>
+  </nav>
+</header>
