@@ -1,0 +1,23 @@
+<section class="product-list-section">
+  <h2>Produtos e Serviços</h2>
+  
+  @if (produtos.length > 0) {
+    <div class="products-grid">
+      @for (produto of produtos; track produto.id) {
+        <app-product-card 
+          [produto]="produto" 
+          (selecionado)="selecionarProduto($event)">
+        </app-product-card>
+      }
+    </div>
+  } @else {
+    <p class="no-products">Nenhum produto cadastrado no momento.</p>
+  }
+</section>
+
+@if (produtoSelecionado) {
+  <app-product-details 
+    [produto]="produtoSelecionado" 
+    (fechar)="fecharDetalhes()">
+  </app-product-details>
+}

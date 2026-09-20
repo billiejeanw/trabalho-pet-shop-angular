@@ -4,20 +4,23 @@
     
     <div class="details-layout">
       <div class="image-side">
-        <img [src]="jogo.imagem" [alt]="jogo.nome">
+        <img [src]="produto.imagem" [alt]="produto.nome">
       </div>
       
       <div class="info-side">
-        <h2>{{ jogo.nome }}</h2>
+        <h2>{{ produto.nome }}</h2>
+        <p class="animal-type">Para: {{ produto.tipoAnimal }}</p>
         
-        @if (jogo.favorito) {
-          <span class="badge favorito">Jogo Favorito</span>
-        }
+        <p class="desc">{{ produto.descricao }}</p>
         
-        <p class="desc">{{ jogo.descricao }}</p>
+        <div class="price-area">
+          <p class="total-price">Total: R$ {{ (produto.preco * quantidade).toFixed(2) }}</p>
+          @if (produto.promocao) {
+            <span class="badge promocao">Aproveite a promoção!</span>
+          }
+        </div>
         
         <div class="purchase-area">
-          <p>Quantidade:</p>
           <div class="quantity-controls">
             <button (click)="diminuirQuantidade()" [disabled]="quantidade <= 1">-</button>
             <span>{{ quantidade }}</span>
@@ -25,7 +28,7 @@
           </div>
           
           <button class="btn-comprar" (click)="comprar()">
-            Confirmar Compra
+            Adicionar ao Carrinho
           </button>
         </div>
       </div>

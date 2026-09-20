@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  titulo = 'Portal de Jogos Retro';
+  titulo = 'Pet Shop Virtual';
   nomeUsuario = 'Visitante';
   usuarioLogado = false;
 
   alterarLogin(): void {
     this.usuarioLogado = !this.usuarioLogado;
-    this.nomeUsuario = this.usuarioLogado ? 'Jogador 1' : 'Visitante';
+    this.nomeUsuario = this.usuarioLogado ? 'Amante de Pets' : 'Visitante';
   }
 }

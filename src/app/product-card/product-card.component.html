@@ -1,0 +1,26 @@
+<article class="product-card">
+  <div class="image-container">
+    <img [src]="produto.imagem" [alt]="produto.nome">
+    @if (!produto.disponivel) {
+      <span class="badge indisponivel">Indisponível</span>
+    }
+    @if (produto.promocao && produto.disponivel) {
+      <span class="badge promocao">Oferta!</span>
+    }
+  </div>
+  
+  <div class="card-content">
+    <h3>{{ produto.nome }}</h3>
+    <p class="animal-type">🐶🐱 {{ produto.tipoAnimal }}</p>
+    <p class="price">R$ {{ produto.preco.toFixed(2) }}</p>
+    
+    <div class="actions">
+      <button 
+        class="btn-detalhes" 
+        [disabled]="!produto.disponivel"
+        (click)="verDetalhes()">
+        Ver Mais
+      </button>
+    </div>
+  </div>
+</article>

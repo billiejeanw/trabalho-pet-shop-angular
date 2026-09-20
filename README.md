@@ -1,19 +1,19 @@
-# Portal de Jogos Retro
+# Pet Shop Virtual
 
 ## Aluno
 Billie Jean (ou o seu nome completo aqui)
 
 ## Descrição
-Aplicação web desenvolvida em Angular para apresentar um catálogo de jogos retrô. O projeto permite visualizar os jogos, favoritar itens e realizar interações simuladas de compra, utilizando componentes, vinculação de dados e diretivas do Angular.
+Aplicação web desenvolvida em Angular para um Pet Shop Virtual. O projeto permite visualizar os produtos e serviços disponíveis, conferir preços, tipos de animais atendidos, promoções e realizar interações simuladas de compra, utilizando componentes, vinculação de dados e diretivas do Angular.
 
 ## Funcionalidades
-- Exibição de um catálogo de jogos em cards.
+- Exibição de um catálogo de produtos/serviços em cards.
 - Visualização de detalhes em uma janela modal.
-- Identificação visual de jogos disponíveis e indisponíveis.
-- Botão para favoritar os jogos (altera o ícone).
+- Identificação visual de itens em promoção e disponibilidade.
+- Informação sobre qual tipo de animal o produto se destina.
 - Sistema fictício de login no cabeçalho (altera o nome e estado do botão).
-- Alteração de quantidades no modal de detalhes.
-- Efeitos visuais e responsividade com CSS.
+- Alteração de quantidades no modal de detalhes com atualização de preço total.
+- Efeitos visuais e responsividade com CSS amigável (cores claras).
 
 ## Tecnologias
 - Angular (v18)

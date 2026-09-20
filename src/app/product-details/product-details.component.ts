@@ -2,14 +2,14 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-game-details',
+  selector: 'app-product-details',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './game-details.component.html',
-  styleUrls: ['./game-details.component.css']
+  templateUrl: './product-details.component.html',
+  styleUrls: ['./product-details.component.css']
 })
-export class GameDetailsComponent {
-  @Input() jogo!: any;
+export class ProductDetailsComponent {
+  @Input() produto!: any;
   @Output() fechar = new EventEmitter<void>();
 
   quantidade = 1;
@@ -29,7 +29,7 @@ export class GameDetailsComponent {
   }
 
   comprar() {
-    alert(`Compra realizada com sucesso: ${this.quantidade}x ${this.jogo.nome}!`);
+    alert(`Compra de ${this.quantidade}x ${this.produto.nome} adicionada ao carrinho!`);
     this.fecharModal();
   }
 }
