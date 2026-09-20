@@ -1,0 +1,34 @@
+<div class="modal-overlay" (click)="fecharModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="fecharModal()">&times;</button>
+    
+    <div class="details-layout">
+      <div class="image-side">
+        <img [src]="jogo.imagem" [alt]="jogo.nome">
+      </div>
+      
+      <div class="info-side">
+        <h2>{{ jogo.nome }}</h2>
+        
+        @if (jogo.favorito) {
+          <span class="badge favorito">Jogo Favorito</span>
+        }
+        
+        <p class="desc">{{ jogo.descricao }}</p>
+        
+        <div class="purchase-area">
+          <p>Quantidade:</p>
+          <div class="quantity-controls">
+            <button (click)="diminuirQuantidade()" [disabled]="quantidade <= 1">-</button>
+            <span>{{ quantidade }}</span>
+            <button (click)="aumentarQuantidade()">+</button>
+          </div>
+          
+          <button class="btn-comprar" (click)="comprar()">
+            Confirmar Compra
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
