@@ -4,16 +4,16 @@
 Billie Jean (ou o seu nome completo aqui)
 
 ## Descrição
-Aplicação web desenvolvida em Angular para um Pet Shop Virtual. O projeto permite visualizar os produtos e serviços disponíveis, conferir preços, tipos de animais atendidos, promoções e realizar interações simuladas de compra, utilizando componentes, vinculação de dados e diretivas do Angular.
+Um projeto de Pet Shop Virtual feito em Angular. A aplicação exibe um catálogo com produtos e serviços, mostrando o preço, o tipo de animal e se o item está em promoção. É possível simular uma compra para praticar o uso de componentes, data binding e diretivas no Angular.
 
 ## Funcionalidades
-- Exibição de um catálogo de produtos/serviços em cards.
-- Visualização de detalhes em uma janela modal.
-- Identificação visual de itens em promoção e disponibilidade.
-- Informação sobre qual tipo de animal o produto se destina.
-- Sistema fictício de login no cabeçalho (altera o nome e estado do botão).
-- Alteração de quantidades no modal de detalhes com atualização de preço total.
-- Efeitos visuais e responsividade com CSS amigável (cores claras).
+- Catálogo de produtos e serviços usando cards.
+- Janela modal para ver detalhes de cada item.
+- Etiquetas visuais para mostrar promoções ou falta de estoque.
+- Marcação indicando para qual pet o produto serve.
+- Login simulado no topo da página (muda o nome do usuário e o botão).
+- Controle de quantidade dentro do modal, calculando o preço total na hora.
+- Layout claro, responsivo e com efeitos visuais no CSS.
 
 ## Tecnologias
 - Angular (v18)

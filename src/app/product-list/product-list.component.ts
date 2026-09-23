@@ -31,7 +31,7 @@ export class ProductListComponent {
       tipoAnimal: 'Cachorro',
       promocao: true,
       disponivel: true,
-      descricao: 'Ração completa e balanceada para cães adultos de todas as raças.'
+      descricao: 'Ração padrão para cães adultos.'
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ export class ProductListComponent {
       tipoAnimal: 'Gato',
       promocao: false,
       disponivel: true,
-      descricao: 'Arranhador de 3 andares com brinquedos integrados, ideal para gatos ativos.'
+      descricao: 'Arranhador de 3 andares, bom para quem tem gatos que precisam gastar energia.'
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ export class ProductListComponent {
       tipoAnimal: 'Cachorro/Gato',
       promocao: true,
       disponivel: false,
-      descricao: 'Serviço completo de banho, hidratação, corte de unhas e tosa higiênica. Agendas lotadas no momento.'
+      descricao: 'Banho, corte de unhas e tosa. No momento estamos sem horários na agenda.'
     }
   ];
 
