@@ -29,4 +29,4 @@ Um projeto de Pet Shop Virtual feito em Angular. A aplicação exibe um catálog
 5. Acesse `http://localhost:4200` no seu navegador.
 
 ## Vídeo
-[Link do vídeo publicado no YouTube] https://youtu.be/kLfOFV6sLIA?si=3PV-eivIsXvEoG0C
+[Link do vídeo publicado no YouTube](https://youtu.be/kLfOFV6sLIA?si=3PV-eivIsXvEoG0C)
